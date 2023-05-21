@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue";
+  background-color: #f4f4f5;
+}
+
+body > div {
+  margin: auto;
+}
+
+/* ======= Buttons ======== */
+
+/* Block */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  min-width: 120px;
+  transition: opacity 0.2s ease;
+}
+
+/* Modifier */
+.btn--size-l {
+  padding: 16px 56px;
+}
+
+.btn--size-s {
+  padding: 8px 32px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn + .btn {
+  margin-left: 16px;
+}
+
+.btn--success {
+  background-color: #71be34;
+}
+
+.btn--warn {
+  background-color: #ffb702;
+}
+
+.btn--danger {
+  background-color: #ff623d;
+}
+
+.btn--disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+
+/* ======= Toast message ======== */
+
+#toast {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 999999;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px 0;
+  min-width: 400px;
+  max-width: 450px;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  transition: all linear 0.3s;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.toast--success {
+  border-color: #47d864;
+}
+
+.toast--success .toast__icon {
+  color: #47d864;
+}
+
+.toast--info {
+  border-color: #2f86eb;
+}
+
+.toast--info .toast__icon {
+  color: #2f86eb;
+}
+
+.toast--warning {
+  border-color: #ffc021;
+}
+
+.toast--warning .toast__icon {
+  color: #ffc021;
+}
+
+.toast--error {
+  border-color: #ff623d;
+}
+
+.toast--error .toast__icon {
+  color: #ff623d;
+}
+
+.toast + .toast {
+  margin-top: 24px;
+}
+
+.toast__icon {
+  font-size: 24px;
+}
+
+.toast__icon,
+.toast__close {
+  padding: 0 16px;
+}
+
+.toast__body {
+  flex-grow: 1;
+}
+
+.toast__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.toast__msg {
+  font-size: 14px;
+  color: #888;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.toast__close {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.tacket {
+  border:#000 solid 1px;
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  background: #fdfcf0;
+  
+  
+}
+.head-tacket{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-right: 150px;
+  border: #000 solid 1px;
+}
+.head-tacket h1 {
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.main-tacket{
+  margin-left: 50px;
+}
+.head-main-tacket  {
+  margin-top: 50px;
+}
+.head-main-tacket h4{
+  font: 1em sans-serif;
+}
+.head-main-tacket h3{
+  margin-top: 50px;
+}
+.main-tacket-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.main-tacket-img img{
+  width: 400px;
+  display: flex;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.ul-day-tacket{
+  display: flex;
+  align-items: center;
+}
+.li-tacket{
+  margin-right: 50px;
+  list-style: none;
+  float: left;
+}
+.round-ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.item-tacket{
+  display:block;
+  border: 1px solid #000;
+  padding:5px;
+  margin-right: 11px;
+  z-index: 2;
+}
+.item-tacket:hover,
+.hour-ticket:hover{
+  background-color: #ED1C24;
+  color:#fff;
+  cursor: pointer;
+}
+.item-tacket.active,
+.hour-ticket.active{
+  background-color: #ED1C24;
+  color:#fff;
+}
+.datepicker{
+  margin-top: -30px;
+  margin-right: 20px;
+}
+.ul-hour-ticket{
+  display:flex;
+  margin-top: 30px;
+}
+.li-hour-ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  
+  border: 1px solid #000;
+}
+.hour-ticket{
+  padding: 10px;
+}
+.li-hour-ticket:hover {
+  background-color: #ED1C24;
+  text-decoration: none;
+  color:#fff;
+}
+.bill-ticket{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.bill-ticket button{
+  background-color: #71be34;
+  border:none;
+  color:white;
+}
+
+.check-ticket button{
+  border: 1px solid #000;
+  background-color: #71be34;
+  border:none;
+  color:white;
+
+}
+.check-ticket{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+}
+.check-ticket button:hover {
+  text-decoration: none;
+  color:#fff;
+}
+.check-ticket button{
+  width: 83px;
+  height: 30px;
+}
+

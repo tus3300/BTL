@@ -1,0 +1,148 @@
+<div class="tacket">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">  
+    <div class="head-tacket">
+        <img src="./img/logo.png" alt="" class="">
+        <h1 class="">Đặt Sân</h1>
+    </div>
+
+    <div class="main-tacket">
+        <div class="head-main-tacket">
+            <h1 class="">Sân bóng ĐH Phenikaa</h1>
+            <h3 class="">Một số hình ảnh về sân bóng</h3>
+            <div class="main-tacket-img">
+                <img src="./img/news-500x280-4.jpg" alt="" class="">
+                <img src="./img/news-500x280-4.jpg" alt="" class="">
+                <img src="./img/news-500x280-4.jpg" alt="" class="">
+                <img src="./img/news-500x280-4.jpg" alt="" class="">
+            </div>
+        </div>
+        <div class="main-main-tacket">
+            <div class="day-main-ticket">
+                <h1 class="h1-main-tacket">Vui lòng chọn ngày</h1>
+                <div class="round-ul">
+                    <ul class="ul-day-tacket">
+                        <li class="li-tacket">
+                            <div class="item-tacket">
+                                15/04/2023
+                            </div>
+                        </li>
+                        <li class="li-tacket">
+                            <div class="item-tacket">
+                                16/04/2023
+                            </div>
+                        </li>
+                        <li class="li-tacket">
+                            <div class="item-tacket">
+                                17/04/2023
+                            </div>
+                        </li>
+                        <li class="li-tacket">
+                            <div class="item-tacket">
+                                18/04/2023
+                            </div>
+                        </li>
+                        
+                        <div class="datepicker">
+                            <label for="dateofbirth">Chọn ngày</label>
+                            <input type="date" name="dateofbirth" id="dateofbirth">
+                        </div>                                                  
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hour-main-ticket">
+                <h1 class="h1-main-tacket">Vui lòng chọn giờ</h1>
+                <ul class="ul-hour-ticket">
+                    <li class="li-hour-ticket">
+                        <div class="hour-ticket">20:45 PM</div>
+                    </li>
+                    <li class="li-hour-ticket">
+                        <div class="hour-ticket">20:45 PM</div>
+                    </li>
+                    <li class="li-hour-ticket">
+                        <div class="hour-ticket">20:45 PM</div>
+                    </li>
+                    <li class="li-hour-ticket">
+                        <div class="hour-ticket">20:45 PM</div>
+                    </li>
+                    <li class="li-hour-ticket">
+                        <div class="hour-ticket">20:45 PM</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot-ticket">
+        <div class="bill-ticket">
+            <button>Thanh toán</button>
+        </div>
+        <div class="check-bill">
+            <style>
+              .checkbox-style {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                margin-left: 5px;
+              }
+              .checkbox-label {
+                cursor: pointer;
+              }
+              .checkbox-style input {
+                display: none;
+              }
+              .checkbox-box {
+                width: 30px;
+                height: 30px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 5px;
+                color: transparent;
+                transition: all 0.2s linear;
+              }
+              .checkbox-input:checked + .checkbox-box {
+                background-color: #6a5af9;
+                border-color: #6a5af9;
+                color: white;
+              }
+            </style>
+            <label for="checkbox" class="checkbox-style">
+              <input
+                type="checkbox"
+                name="evondev"
+                id="checkbox"
+                class="checkbox-input"
+              />
+              <div class="checkbox-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <label for="checkbox" class="checkbox-label"></label>
+            </label>
+        </div>
+        <div class="check-ticket">
+            <a href="index.html" class=""><button>Xác nhận</button></a>
+        </div>
+    </div>
+</div>
+<script src="js/date.js"></script>

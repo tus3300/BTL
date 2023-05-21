@@ -1,0 +1,8 @@
+const itemTacket = document.querySelectorAll('.item-tacket');
+
+itemTacket.forEach((item,index) => {
+    item.addEventListener('click' ,function(event){
+        itemTacket.forEach(il => il.cl)
+    })
+}) 
+  
